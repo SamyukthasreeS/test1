@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+<script>
+function getElements() {
+var x = document.getElementsByTagName("input");
+document.getElementById("demo").innerHTML = x.length;
+}
+function myCreateFunction() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = "funmood";
+  cell2.innerHTML = "cheerful";
+  cell3.innerHTML = "Stressfree";
+}
+
+function myDeleteFunction() {
+  document.getElementById("myTable").deleteRow(0);
+}
+</script>
+</head>
+<body background="https://images7.alphacoders.com/749/thumb-1920-749613.png" style="font-family:Brush Script MT,cursive; background-repeat:no-repeat;background-size:100% 100%;">
+<center><h1 style="font-size:4vw;color:#aaaaaa;">Lets Find Your Present Mind Set!</h1>
+<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5iE5tGL8vwUP-8VVAsooNtSGFVaqwLoaB1gycHw0RpZtXaRKKIrgCWhWYssby2Nolx8&usqp=CAU" alt="Avatar" style="width:200px"><br>
+<p style="font-size:2vw;color:#0c5c8f;">Click the buttons to Add and remove your VIBES.</p>
+
+<table id="myTable" style="border: 2px solid black;font-size:1.5vw">
+  <tr>
+    <td>Happy</td>
+    <td>Joyful</td>
+        <td>Relaxed</td>
+  </tr>
+  <tr>
+    <td>Tired</td>
+    <td>Bored</td>
+        <td>Peace</td>
+  </tr>
+  <tr>
+    <td>Great</td>
+    <td>Enthusiastics</td>
+        <td>Smile in pain</td>
+  </tr>
+</table>
+<br>
+<button onclick="myCreateFunction()">Add Happiness</button>
+<button onclick="myDeleteFunction()">Remove Vibes</button>
+<br><h3 style="font-size:2vw;color:#0c5c8f;">Describe yourself in just 3 simple words:</h3><br>
+<input type="text" size="20"><br>
+<input type="text" size="20"><br>
+<input type="text" size="20"><br>
+<p>
+<input type="button" onclick="getElements()" value="Your state of happiness on scale of 5?">
+</p>
+<p id="demo"></p>
+<p style="font-size:2vw;color:#0c5c8f;">Finding The total number of good vibes you have:</p>
+<a name="html" style="font-size:1.5vw">Positive Thinking</a><br>
+<a name="css" style="font-size:1.5vw">Self Confidence</a><br>
+<a name="xml" style="font-size:1.5vw">Self Motivation</a><br>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML ="<h3>"+
+"Number of vibes you we got from you: " +"</h3>"+ document.anchors.length;
+</script></center></body</html>
+
